@@ -13,7 +13,7 @@ export default {
     }
   },
   mounted() {
-    fetch('https://omdbapi.com/?apikey=56edad45&t=%27Harry%20Potter%27')
+    fetch('https://omdbapi.com/?apikey=56edad45&s=%27Harry%20Potter%27')
       .then((res) => res.json())
       .then((data) => (this.movies = data))
       .catch((err) => console.log(err.message))
