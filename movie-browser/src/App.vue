@@ -1,10 +1,14 @@
 <template>
   <h1>{{ title }}</h1>
+  <movieData></movieData>
 </template>
 
 <script>
+import movieData from './components/Data-component.vue'
+
 export default {
   name: 'App',
+  components: { movieData },
   data() {
     return {
       title: 'Vue App'
